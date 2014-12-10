@@ -1,0 +1,14 @@
+***README for bdnknit_v0.2h***
+
+ROOT macro that will take the ASCII formatted output files of SIMION, a GEANT4 simulation, and Master event file and output a ROOT file containing one TTree object filled with simulation data...
+
+  For the moment the information file will be read into a third branch
+
+  TTree
+  |---> Branch (MASTER DECAY DATA)
+  |---> Branch (SIMION DATA)
+  |---> Branch (GEANT4 DATA)
+
+It is written to be loaded as a shared library in a ROOT CINT session via the command:
+
+.L bdn_knit_v0.2h+
